@@ -1,5 +1,6 @@
 // src/screens/restaurants/RestaurantDetailScreen.js
 /* eslint-disable react/prop-types */ // Desactiva temporalmente aviso de ESLint
+import SystemInfo from '../../components/SystemInfo'; // Importa el componente SystemInfo
 import React from 'react'
 import { View, Text } from 'react-native'
 
@@ -11,6 +12,8 @@ export default function RestaurantDetailScreen ({ route }) {
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
             {/* Muestra el ID recibido */}
             <Text>Restaurant details. Id: {id}</Text>
+            {/* Incluye el componente SystemInfo aquí */}
+            <SystemInfo />
         </View>
   )
 }
