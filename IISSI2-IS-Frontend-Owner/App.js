@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native'
 import * as React from 'react'
 import ControlPanelScreen from './src/screens/controlPanel/ControlPanelScreen' // Asegúrate que la ruta es correcta
 import ProfileScreen from './src/screens/profile/ProfileScreen'           // Asegúrate que la ruta es correcta
-import RestaurantsScreen from './src/screens/restaurants/RestaurantsScreen' // Asegúrate que la ruta es correcta
+import RestaurantsStack from './src/screens/restaurants/RestaurantsStack' // Asegúrate que la ruta es correcta
 
 // Crea el navegador de pestañas inferiores
 const Tab = createBottomTabNavigator()
@@ -19,7 +19,7 @@ export default function App () {
         {/* Cada Tab.Screen define una pestaña */}
         <Tab.Screen
           name="Restaurants" // Nombre que se muestra en la pestaña
-          component={RestaurantsScreen} // Componente que se renderiza
+          component={RestaurantsStack} // Componente que se renderiza
         />
         <Tab.Screen
           name="Control Panel"
